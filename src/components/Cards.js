@@ -20,9 +20,10 @@ const Cards = (props) => {
   // sdate ke sare obj aage eske under 
    const ecard = (val,index) => {
       return(
-      <div key={index} > 
+
+
+      <div className='cards' key={index} > 
           <Card
-              
               name={val.sname}
               details={val.sdetails}
               amount={val.samount}
