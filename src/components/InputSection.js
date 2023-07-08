@@ -40,25 +40,20 @@ const InputSection = () => {
 
 
     return (
-        <div className='container p-5' >
-            <form className='mb-5' style={{ border: '1px solid green', padding: '10px' }} >
+        <div className='container' >
+            <form className='form mb-5'>
                 <div className="mb-3 ">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
-                    <input className="form-control bg-success" id="idName" type="text" placeholder="" />
+                    <input className="form-control" id="idName" type="text" placeholder="Name" />
                 </div>
                 <div className="mb-3 ">
-                    <label htmlFor="exampleInputEmail1" className="form-label">In Details</label>
-                    <input className="form-control bg-success" id="idDetails" type="text" placeholder="" />
+                    <input className="form-control" id="idAmount" type="number" placeholder="Amount" />
                 </div>
                 <div className="mb-3 ">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Amount</label>
-                    <input className="form-control bg-success" id="idAmount" type="number" placeholder="" />
+                    <input className="form-control" id="idDate" type="date" placeholder="Date" />
                 </div>
-                <div className="mb-3 ">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Date</label>
-                    <input className="form-control bg-success" id="idDate" type="date" placeholder="" />
+                <div className="mb-3">
+                    <textarea className="form-control" id="idDetails" rows="5" cols="5" placeholder="Details"></textarea>
                 </div>
-
                 <button type="button" onClick={handleSubmit} className="btn btn-primary">Submit</button>
             </form>
 
